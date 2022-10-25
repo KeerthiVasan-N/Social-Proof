@@ -1,0 +1,211 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'League Spartan',sans-serif;
+    position: relative;
+    /* padding-block: 2rem; */
+}
+.grid{
+    display: grid;
+    justify-items: center;
+    gap: 1rem;
+
+}
+.bg{
+    position: absolute;
+    z-index: -1;
+}
+.d{
+    right: 0;
+    bottom: 0;
+}
+q{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.review{
+    width: 330px;
+    padding: 1rem;
+    margin-bottom:1rem ;
+    color: white;
+    border-radius: 6px;
+    background-color: hsl(300, 43%, 22%);
+}
+.itm{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+
+}
+.itm img{
+    width:3rem;
+    height: 3rem;
+    margin-right: 1.3rem;
+   border-radius:24px;
+}
+.s{
+    margin-right: auto;
+}
+.s h2{
+    margin-bottom: 0rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+
+
+}
+.s p{
+    margin-top:0.3rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(155,80,135);
+
+}
+q{
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+
+}
+
+.rate{
+    background-color: rgba(208, 204, 208, 0.355);
+    border-radius: 10px;
+    width: 350px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: rgb(78,48,77);
+    padding: 0.7rem 4rem 0;
+    text-align: center;
+    /* margin-top: 1rem; */
+    /* margin-bottom: 1rem; */
+    /* overflow: hidden; */
+}
+.stars p{
+    /* display: inline-block; */
+    /* margin-left: 1rem; */
+
+    font-size: medium;
+}
+.stars img{
+    margin-inline: 0.2rem;
+}
+main{
+    width: 340px;
+    text-align: center;
+}
+main h1{
+    color: rgb(82,45,82);
+    font-weight: 700;
+    font-size: 2.6rem;
+    margin-bottom: 1rem;
+}
+.c{
+    display: none;
+}
+main p{
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  color: rgb(166,156,164);
+}
+@media screen and (min-width:766px) {
+    .c{
+        display: block;
+    }
+    .m{
+        display: none;
+    }
+    .f{
+        display: flex;
+        gap: 1rem;
+        height: 450px;
+    }
+    .f >*{
+        align-self: start;
+    }
+    .f article:nth-child(2){
+        /* align-self: center; */
+        margin-top: 1rem;
+    
+    }
+    .f article:nth-child(3){
+        /* align-self: center; */
+        margin-top: 2rem;
+    
+    }
+    .r{
+        display: grid;
+        grid-template-columns: 500px 500px;
+    }
+    main{
+        width:75%;
+        text-align: left;
+
+    }
+    main h1{
+        font-weight: 700;
+         font-size: 3rem;
+         margin-top: -1rem;
+        }
+        main p{
+        font-size: 1rem;
+    }
+    body{
+        padding-left: 0;
+    }
+    .bg.c.d{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+    .rate{
+        padding: 0rem 0.4rem;
+        width: 370px;
+        font-size: 0.1rem;
+    }
+    .stars{
+        display: flex;
+        gap: 1rem;
+        width: 400px;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;
+        border-radius: 6px;
+        background-color: rgba(208, 204, 208, 0.357);
+    }
+    .rate{
+        background-color: white;
+        margin-top: 2rem;
+        /* margin-left: 1.1rem; */
+    }
+    .stars >*{
+        align-self: center;
+    }
+.r{
+    align-items: flex-end;
+}
+ .r .grid{
+    margin-inline: auto;
+    /* align-items: flex-end; */
+ }
+    .grid .rate:nth-child(2){
+        margin-left: 1.5rem;
+    } 
+    .grid .rate:nth-child(3){
+        margin-left: 4rem;
+    } 
+    body{
+        padding-left: 2rem;
+    }
+    .grid{
+        display: block;
+        gap: 0;
+    }
+    .c.t{
+        left:-6rem;
+        top: -2rem;
+
+    }
+
+}
