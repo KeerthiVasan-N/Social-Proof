@@ -4,6 +4,9 @@
 body{
     font-family: 'League Spartan',sans-serif;
     position: relative;
+    display: grid;
+    justify-content: center;
+    align-content: center;
     /* padding-block: 2rem; */
 }
 .grid{
